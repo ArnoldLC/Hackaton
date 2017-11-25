@@ -21,6 +21,8 @@ class CreateTblPartido extends Migration
             $table->String('direccion');
             $table->String('ciudad');
             $table->String('pais');
+            $table->foreign('tipo_partido_id')->references('id')->on('tipo_partido');
+            $table->foreign('campeonato_id')->references('id')->on('campeonato');
             $table->rememberToken();
             $table->timestamps();
         });

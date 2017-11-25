@@ -23,6 +23,8 @@ class CreateTblJugador extends Migration
             $table->date('fecha_nacimiento');
             $table->string('lugar_nacimiento');
             $table->string('grupo_sanguineo');            
+            $table->foreign('equipo_id')->references('id')->on('equipo');
+            $table->foreign('jugador_detalle_id')->references('id')->on('jugador_detalle');
             $table->rememberToken();
             $table->timestamps();
         });

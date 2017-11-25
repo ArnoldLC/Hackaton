@@ -18,6 +18,8 @@ class CreateTblPartidoDetalle extends Migration
             $table->integer('goles_a_favor');
             $table->integer('goles_en_contra');
             $table->String('adversario');
+            $table->foreign('equipo_id')->references('id')->on('equipo');
+            $table->foreign('partido_id')->references('id')->on('partido');
             $table->rememberToken();
             $table->timestamps();
         });
