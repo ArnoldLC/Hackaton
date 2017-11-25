@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::resource('/equipo','EquipoController');
 
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {
