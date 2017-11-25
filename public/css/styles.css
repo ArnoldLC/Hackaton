@@ -1,0 +1,81 @@
+.contenedor{
+    display: flex;
+}
+
+p{
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+.columnas1, .columnas2{
+    width: 50%;
+}
+
+.columnas1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.jugador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    box-shadow: -5px 5px 2px #888888;
+}
+
+.jugador .imagen, .jugador .grafico{
+    width: 50%;
+}
+
+.columnas1 .imagen{
+    border: 1px solid #888;
+    background-color: goldenrod;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+}
+
+.jugadores{
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    margin-top: 15px;
+    box-shadow: -5px 5px 2px #888888;
+}
+
+.lista{
+    height: 185px;
+    overflow-y: scroll;
+}
+
+.jugadores .nombres{
+    display: block;
+    width: 100%;
+    background-color: rgb(133, 197, 133);
+    margin: 1px 0;
+}
+
+.columnas2 .caracteristicas{
+    padding-left: 15px;    
+    border: 1px solid #888888;
+    box-shadow: -5px 5px 2px #888888;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.columnas2 .etiquetas, .columnas2 .datos{
+    display: inline-block;
+    width: 48%;
+    background-color: rgb(133, 197, 133);    
+    margin: 1px 0;
+}
