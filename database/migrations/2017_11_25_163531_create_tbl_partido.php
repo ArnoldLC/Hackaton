@@ -16,6 +16,7 @@ class CreateTblPartido extends Migration
          Schema::create('partido', function (Blueprint $table) {
             $table->increments('id');
             $table->date('fecha');
+            $table->smallInteger('estado');
             $table->String('lugar');
             $table->String('direccion');
             $table->String('ciudad');
