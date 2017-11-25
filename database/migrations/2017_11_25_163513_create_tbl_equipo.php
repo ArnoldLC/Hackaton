@@ -18,6 +18,7 @@ class CreateTblEquipo extends Migration
             $table->string('nombre');
             $table->string('imagen');
             $table->smallInteger('estado');
+            $table->date('fecha_fundacion');
             $table->string('ciudad');
             $table->string('pais');            
             $table->rememberToken();
