@@ -18,8 +18,7 @@ class CreateTblTemporada extends Migration
             $table->string('nombre');
             $table->smallInteger('estado');
             $table->date('fecha_inicio');
-            $table->date('fecha_fin');
-            $table->foreign('temporada_id')->references('id')->on('temporada');            
+            $table->date('fecha_fin');            
             $table->rememberToken();
             $table->timestamps();
         });
