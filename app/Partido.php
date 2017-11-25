@@ -12,4 +12,16 @@ class Partido extends Model
     ];
 
     protected $table = 'partido';
+
+    public function equipo() {
+        return $this->belongsTo('Equipo');
+    }
+
+    public function tipoPartido() {
+        return$this->hasOne('TipoPartido');
+    }
+
+    public function campeonato() {
+        return $this->belongsTo('Campeonato');
+    }
 }

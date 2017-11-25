@@ -12,4 +12,8 @@ class Temporada extends Model
     ];
 
     protected $table = 'temporada';
+
+    public function campeonato() {
+        return $this->hasMany('Campeonato');
+    }
 }

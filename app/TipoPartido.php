@@ -11,4 +11,8 @@ class TipoPartido extends Model
     ];
 
     protected $table = 'partido_tipo';
+
+    public function partido() {
+        return $this->belongsTo('Partido');
+    }
 }

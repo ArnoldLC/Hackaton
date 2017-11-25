@@ -12,4 +12,12 @@ class Jugador extends Model
     ];
 
     protected $table = 'jugador';
+
+    public function equipo() {
+        return $this->belongsTo('Equipo');
+    }
+
+    public function jugadorDetalle() {
+        return $this->hasMany('JugadorDetalle');
+    }
 }

@@ -13,4 +13,8 @@ class JugadorDetalle extends Model
     ];
 
     protected $table = 'jugador_detalle';
+
+    public function jugador() {
+        return $this->belongsTo('Jugador');
+    }
 }
