@@ -21,9 +21,14 @@ class CreatePartidoTable extends Migration
             $table->String('direccion');
             $table->String('ciudad');
             $table->String('pais');
-            $table->integer('tipo_partido_id')->unsigned();            
+            $table->integer('goles_a_favor');
+            $table->integer('goles_en_contra');
+            $table->String('adversario');
+            $table->integer('equipo_id')->unsigned();                        
+            $table->integer('partido_tipo_id')->unsigned();            
             $table->integer('campeonato_id')->unsigned();
-            $table->foreign('tipo_partido_id')->references('id')->on('partido_tipo');
+            $table->foreign('equipo_id')->references('id')->on('equipo');
+            $table->foreign('partido_tipo_id')->references('id')->on('partido_tipo');
             $table->foreign('campeonato_id')->references('id')->on('campeonato');
             $table->rememberToken();
             $table->timestamps();
