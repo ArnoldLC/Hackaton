@@ -34,18 +34,19 @@
 							</div>
 						</div>
 						<div class="form-group col-md-7">
-							<label for="nombre">Nombre:</label>
+							<label for="nombre">Nombres:</label>
 							<input type="text" name="nombre" class="form-control">
-							<label for="nombre">Apellido:</label>
+							<label for="nombre">Apellidos:</label>
 							<input type="text" name="apellido" class="form-control">
 							<label for="nombre">Fecha Nacimiento:</label>
-							<input type="date" name="fecha_fundacion" class="form-control">
+							<input type="date" name="fecha_nacimiento" class="form-control">
 							<label for="nombre">Lugar Nacimiento:</label>
-							<input type="date" name="fecha_fundacion" class="form-control">							
+							<input type="text" name="lugar_nacimiento" class="form-control">							
+							<label for="nombre">Grupo Sanguineo:</label>
+							<input type="text" name="grupo_sanguineo" class="form-control">							
 							<label for="nombre">Equipo:</label>
-							<Select class="form-control">
-								<option>Equipo A</option>
-								<option>Equipo B</option>
+							<Select class="form-control" id="equipo">
+								<option>Equipo A</option>								
 							</Select>
 							
 						</div>
