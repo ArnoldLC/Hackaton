@@ -1,0 +1,15 @@
+
+.img-equipo{
+		background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Community_Noun_project_2280.svg/1000px-Community_Noun_project_2280.svg.png');
+		width: 200px;height: 200px;
+		margin:auto;
+		background-position: center;
+		background-size: contain;
+		background-color: #FFF; 			
+		position: relative;
+}
+.btn-subir_imagen{
+	position:relative;	
+	top:-50px;
+	text-align: center;
+}

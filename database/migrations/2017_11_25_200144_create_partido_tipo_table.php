@@ -15,7 +15,7 @@ class CreatePartidoTipoTable extends Migration
     {
         Schema::create('partido_tipo', function (Blueprint $table) {
             $table->increments('id');
-            $table->String('descripcion');                        
+            $table->String('partido_tipo');
             $table->rememberToken();
             $table->timestamps();
         });
