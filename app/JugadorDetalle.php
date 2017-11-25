@@ -11,4 +11,6 @@ class JugadorDetalle extends Model
         'total_asistencias', 'goles', 'porcentajes_pases',
         'minutos_jugados',
     ];
+
+    protected $table = 'jugador_detalle';
 }

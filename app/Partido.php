@@ -10,4 +10,6 @@ class Partido extends Model
         'fecha', 'lugar', 'direccion', 'ciudad',
         'pais',
     ];
+
+    protected $table = 'partido';
 }

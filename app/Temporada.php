@@ -10,4 +10,6 @@ class Temporada extends Model
         'nombre', 'estado', 'cidudad',
         'pais',
     ];
+
+    protected $table = 'temporada';
 }

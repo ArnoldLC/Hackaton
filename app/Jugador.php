@@ -10,4 +10,6 @@ class Jugador extends Model
         'name', 'apellido', 'email', 'fecha_nacimiento',
         'lugar_nacimiento', 'grupo_sanguineo',
     ];
+
+    protected $table = 'jugador';
 }

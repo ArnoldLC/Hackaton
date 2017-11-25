@@ -10,4 +10,6 @@ class Campeonato extends Model
         'nombre', 'descripcion', 'fecha_inicio',
         'fecha_fin', 'pais',
     ];
+
+    protected $table = 'campeonato';
 }

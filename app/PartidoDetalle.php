@@ -10,4 +10,6 @@ class PartidoDetalle extends Model
         'goles_a_favor', 'goles_en_contra',
         'adversario',
     ];
+
+    protected $table = 'partido_detalle';
 }

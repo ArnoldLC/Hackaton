@@ -10,4 +10,6 @@ class Equipo extends Model
         'nombre_equipo', 'fecha_fundacion', 'fundacion',
         'estado', 'ciudad', 'pais',
     ];
+
+    protected $table = 'equipo';
 }

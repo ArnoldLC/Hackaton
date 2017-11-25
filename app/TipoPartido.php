@@ -9,4 +9,6 @@ class TipoPartido extends Model
     protected $fillable = [
         'descripcion',
     ];
+
+    protected $table = 'partido_tipo';
 }
