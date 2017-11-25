@@ -59,7 +59,8 @@ h2{
 .jugadores .nombres{
     display: block;
     width: 100%;
-    background-color: #3C8DBC;
+    border-top: 1px solid #FFF;
+    background-color: #374850;
     margin: 1px 0;
 }
 
@@ -77,10 +78,7 @@ h2{
 .columnas2 .etiquetas, .columnas2 .datos{
     display: inline-block;
     width: 49%;
-    background-color: #3C8DBC;
-    margin: 1px 0;
-    box-sizing: border-box;
-    
+    margin: 1px 0;    
 }
 
 .columnas2 h2{

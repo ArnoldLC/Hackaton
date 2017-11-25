@@ -46,49 +46,50 @@
 		<div class="columnas2">
 			<div class="caracteristicas propias">
 				<h2>Datos del jugador</h2>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Nombre del jugador</p>
 					<p class="datos">xxxx</p>
 				</div>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Apellidos del jugador</p>
 					<p class="datos">xxxx</p>
 				</div>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Fecha de nacimiento</p>
 					<p class="datos">xxxx</p>
 				</div>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Lugar de nacimiento</p>
 					<p class="datos">xxxx</p>
-				<div class="información">
+				</div>
+				<div class="informacion">
 					<p class="etiquetas">Grupo sanguíneo</p>
 					<p class="datos">xxxx</p>
 				</div>
 			</div>
 			<div class="caracteristicas detalle">
 				<h2>Detalles del jugador</h2>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Pases completos</p>
 					<p class="datos">xxxx</p>
 				</div>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Pases errados</p>
 					<p class="datos">xxxx</p>
 				</div>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Total de pases</p>
 					<p class="datos">xxxx</p>
 				</div>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Asistencias</p>
 					<p class="datos">xxxx</p>
 				</div>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Porcentaje de pases</p>
 					<p class="datos">xxxx</p>
 				</div>
-				<div class="información">
+				<div class="informacion">
 					<p class="etiquetas">Minutos jugados</p>
 					<p class="datos">xxxx</p>
 				</div>					
