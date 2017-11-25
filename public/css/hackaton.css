@@ -8,8 +8,26 @@
 		background-color: #FFF; 			
 		position: relative;
 }
+
+
+.img-jugador{
+		background-image:url('https://d30y9cdsu7xlg0.cloudfront.net/png/10299-200.png');
+		width: 300px;height: 300px;
+		margin:auto;
+		background-position: center;
+		background-size: contain;
+		background-color: #FFF; 			
+		position: relative;
+}
+
 .btn-subir_imagen{
 	position:relative;	
 	top:-50px;
 	text-align: center;
+}
+
+.btn-subir_imagen_v2{
+	position:relative;		
+	text-align: center;
+	top:20px;
 }
