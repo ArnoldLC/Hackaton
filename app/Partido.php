@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Partido extends Model
 {
     protected $fillabe = [
-        'fecha', 'lugar', 'direccion', 'ciudad',
-        'pais',
+        'fecha', 'estado','lugar', 'direccion', 'ciudad',
+        'pais', 'goles_a_favor', 'goles_en_contra', 'adversario', 'equipo_id',
+        'partido_tipo_id', 'campeonato_id',
     ];
 
     protected $table = 'partido';

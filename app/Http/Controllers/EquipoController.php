@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Equipo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EquipoController extends Controller
 {
@@ -13,7 +15,9 @@ class EquipoController extends Controller
      */
     public function index()
     {
-        return view('equipo.index');
+        $user_id = Auth::user()->id;
+        $equipos = Equipo::all()->where('user_id', $user_id);
+        return view('equipo.index', compact('equipos'));
     }
 
     /**
