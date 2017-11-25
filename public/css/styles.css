@@ -3,11 +3,11 @@
 }
 
 p{
-    color: black;
+    color: white;
 }
 
 h2{
-    color: black;
+    color: white;
 }
 
 .columnas1, .columnas2{
@@ -35,9 +35,8 @@ h2{
     width: 50%;
 }
 
-.columnas1 .imagen{
-    border: 1px solid #888;
-    background-color: goldenrod;
+.columnas1 .imagen, .columnas1 .imagen img{
+    border: 1px solid #FFF;
     border-radius: 50%;
     height: 140px;
     width: 140px;
@@ -46,9 +45,10 @@ h2{
 .jugadores{
     text-align: center;
     border-radius: 5px;
-    border: 1px solid #888888;
+    border: 1px solid transparent;
     margin-top: 15px;
     box-shadow: -5px 5px 2px #888888;
+    background-color: #222D32;
 }
 
 .lista{
@@ -59,23 +59,41 @@ h2{
 .jugadores .nombres{
     display: block;
     width: 100%;
-    background-color: rgb(133, 197, 133);
+    background-color: #3C8DBC;
     margin: 1px 0;
 }
 
-.columnas2 .caracteristicas{
-    padding-left: 15px;    
-    border: 1px solid #888888;
+.columnas2 .caracteristicas{    
+    padding-left: 5px;    
+    border: 1px solid transparent;
     box-shadow: -5px 5px 2px #888888;
     border-radius: 5px;
     box-sizing: border-box;
     padding-bottom: 10px;
     margin-top: 15px;
+    background-color: #222D32;
 }
 
 .columnas2 .etiquetas, .columnas2 .datos{
     display: inline-block;
-    width: 48%;
-    background-color: rgb(133, 197, 133);    
+    width: 49%;
+    background-color: #3C8DBC;
     margin: 1px 0;
+    box-sizing: border-box;
+    
+}
+
+.columnas2 h2{
+    border-bottom: 1px solid white;
+}
+
+.columnas2 p{
+    color: white;
+}
+
+/*********************************************/
+
+footer{
+    display: flex;
+    justify-content: center;
 }
