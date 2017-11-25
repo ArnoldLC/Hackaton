@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTblPartido extends Migration
+class CreatePartidoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTblPartido extends Migration
      */
     public function up()
     {
-         Schema::create('partido', function (Blueprint $table) {
+           Schema::create('partido', function (Blueprint $table) {
             $table->increments('id');
             $table->date('fecha');
             $table->smallInteger('estado');
@@ -21,7 +21,9 @@ class CreateTblPartido extends Migration
             $table->String('direccion');
             $table->String('ciudad');
             $table->String('pais');
-            $table->foreign('tipo_partido_id')->references('id')->on('tipo_partido');
+            $table->integer('tipo_partido_id')->unsigned();            
+            $table->integer('campeonato_id')->unsigned();
+            $table->foreign('tipo_partido_id')->references('id')->on('partido_tipo');
             $table->foreign('campeonato_id')->references('id')->on('campeonato');
             $table->rememberToken();
             $table->timestamps();
@@ -35,6 +37,6 @@ class CreateTblPartido extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('partido');
     }
 }

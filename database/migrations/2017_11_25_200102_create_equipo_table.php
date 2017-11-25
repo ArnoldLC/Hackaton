@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTblPartidoTipo extends Migration
+class CreateEquipoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,14 @@ class CreateTblPartidoTipo extends Migration
      */
     public function up()
     {
-        Schema::create('partido_tipo', function (Blueprint $table) {
+        Schema::create('equipo', function (Blueprint $table) {
             $table->increments('id');
-            $table->String('descripcion');                        
+            $table->string('nombre');
+            $table->string('imagen');
+            $table->smallInteger('estado');
+            $table->date('fecha_fundacion');
+            $table->string('ciudad');
+            $table->string('pais');            
             $table->rememberToken();
             $table->timestamps();
         });
@@ -28,6 +33,6 @@ class CreateTblPartidoTipo extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('equipo');
     }
 }
