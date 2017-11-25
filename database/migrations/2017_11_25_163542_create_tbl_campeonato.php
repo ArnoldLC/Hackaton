@@ -17,9 +17,9 @@ class CreateTblCampeonato extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('descripcion');
+            $table->smallInteger('estado');
             $table->date('fecha_inicio');
-            $table->date('fecha_fin');
-            $table->string('pais');            
+            $table->date('fecha_fin');            
             $table->rememberToken();
             $table->timestamps();
         });

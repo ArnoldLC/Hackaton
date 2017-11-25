@@ -16,9 +16,9 @@ class CreateTblTemporada extends Migration
          Schema::create('temporada', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
-            $table->integer('estado');
-            $table->string('ciudad');
-            $table->string('pais');            
+            $table->smallInteger('estado');
+            $table->date('fecha_inicio');
+            $table->date('fecha_fin');            
             $table->rememberToken();
             $table->timestamps();
         });

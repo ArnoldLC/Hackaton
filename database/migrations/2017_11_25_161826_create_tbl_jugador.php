@@ -17,6 +17,8 @@ class CreateTblJugador extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('apellido');
+            $table->string('imagen');
+            $table->smallInteger('estado');
             $table->string('email')->unique();            
             $table->date('fecha_nacimiento');
             $table->string('lugar_nacimiento');
