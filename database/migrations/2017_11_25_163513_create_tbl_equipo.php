@@ -16,7 +16,8 @@ class CreateTblEquipo extends Migration
         Schema::create('equipo', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
-            $table->integer('estado');
+            $table->string('imagen');
+            $table->smallInteger('estado');
             $table->string('ciudad');
             $table->string('pais');            
             $table->rememberToken();
