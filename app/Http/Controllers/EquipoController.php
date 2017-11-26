@@ -17,7 +17,7 @@ class EquipoController extends Controller
     {
         $user_id = Auth::user()->id;
         $equipos = Equipo::all()->where('user_id', $user_id);
-        return view('equipo.index', compact('equipos'));
+        return view('equipo.mostrar_equipos', compact('equipos'));
     }
 
     /**
@@ -48,7 +48,7 @@ class EquipoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
+    {        
         //
     }
 
