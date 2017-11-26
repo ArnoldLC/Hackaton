@@ -17,7 +17,7 @@ class EquipoController extends Controller
     {
         $user_id = Auth::user()->id;
         $equipos = Equipo::all()->where('user_id', $user_id);
-        return view('equipo.index', compact('equipos'));
+        return view('equipo.mostrar_equipos', compact('equipos'));
     }
 
     /**
@@ -38,7 +38,25 @@ class EquipoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user_id = Auth::user()->id;
+        request()->validate([
+           'nombre' => 'required',
+            'fecha_fundacion' => 'required',
+            'ciudad' => 'required',
+            'pais' => 'required',
+        ]);
+
+        $input = [
+            'nombre' => $request->post('nombre'),
+            'fecha_fundacion' => $request->post('fecha_fundacion'),
+            'ciudad' => $request->post('ciudad'),
+            'pais' => $request->post('pais'),
+            'imagen' => $request->post('imagen'),
+            'user_id' => $user_id,
+        ];
+
+        Equipo::create($input);
+        return redirect('/equipo');
     }
 
     /**
@@ -48,7 +66,7 @@ class EquipoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
+    {        
         //
     }
 

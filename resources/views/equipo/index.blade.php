@@ -9,7 +9,7 @@
 	<div class="container-fluid spark-screen">
 		<div class="row">
 			<div class="col-md-4">
-
+				{!! Form::open([ 'route' => ['equipo.store', 'method' => 'post'] ]) !!}
 				<!-- Default box -->
 				<div class="box">
 					<div class="box-header with-border">
@@ -29,7 +29,7 @@
 								
 							</div>
 							<div class="btn-subir_imagen">
-								<button class="btn btn-success" id="uploadImageTeam">Subir Imagen</button>
+								<a class="btn btn-success" id="uploadImageTeam">Subir Imagen</a>
 								<input type="file" name="" class="hidden" id="fileteam">
 							</div>
 						</div>
@@ -48,9 +48,10 @@
 
 					</div>
 					<!-- /.box-body -->
+					<input type="submit" id="submit" class="btn btn-primary">
 				</div>
 				<!-- /.box -->
-
+					{!! Form::close() !!}
 			</div>
 		</div>
 	</div>

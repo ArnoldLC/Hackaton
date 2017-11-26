@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@index');
 
 Route::resource('/equipo','EquipoController');
+
 Route::resource('/jugador', 'JugadorController');
 
 Route::group(['middleware' => 'auth'], function () {
