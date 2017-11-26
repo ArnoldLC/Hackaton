@@ -23,7 +23,10 @@
 						</div>
 					</div>
 					<div class="box-body">
-						<!--FOREACH DE LOS EQUIPOS REGISTRADOS-->						
+						<!--FOREACH DE LOS EQUIPOS REGISTRADOS-->			
+						<div class="col-md-12">			
+							<button class="btn btn-success">CREAR EQUIPO</button>
+						</div>
 						@for ($i=1;$i < 10 ; $i ++)
 						<div class="col-md-3">
 							<div class="form-group col-md-12">
