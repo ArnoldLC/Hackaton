@@ -2,10 +2,22 @@
 .img-equipo{
 		background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Community_Noun_project_2280.svg/1000px-Community_Noun_project_2280.svg.png');
 		width: 100%;height: 200px;
-		margin:auto;
+		margin:auto;		
+		background-repeat: no-repeat;	
 		background-position: center;
 		background-size: contain;
-		background-color: #FFF; 			
+		background-color: #FFF; 
+		position: relative;
+}
+
+.img-equipos{
+		background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Community_Noun_project_2280.svg/1000px-Community_Noun_project_2280.svg.png');
+		width: 100%;height: 100px;
+		margin:auto;		
+		background-repeat: no-repeat;	
+		background-position: center;
+		background-size: contain;
+		background-color: #FFF; 
 		position: relative;
 }
 
