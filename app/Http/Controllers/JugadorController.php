@@ -13,7 +13,7 @@ class JugadorController extends Controller
      */
     public function index()
     {
-        return view('equipo.index');
+        return view('jugador.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class JugadorController extends Controller
      */
     public function create()
     {
-        return view('equipo.index');
+        return view('jugador.index');
     }
 
     /**

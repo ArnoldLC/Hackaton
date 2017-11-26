@@ -21,6 +21,8 @@ class CreateEquipoTable extends Migration
             $table->date('fecha_fundacion')->nullable();
             $table->string('ciudad')->nullable();
             $table->string('pais')->nullable();
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->rememberToken();
             $table->timestamps();
         });
