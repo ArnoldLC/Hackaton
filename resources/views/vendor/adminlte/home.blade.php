@@ -14,7 +14,7 @@
 					<img src="https://www.pes-patch.com/wp-content/uploads/2016/07/Download-PES2013-Lionel-Messi-by-Facemaker-EmreT.jpg" alt="jugador X">
 				</div>
 				<div class="grafico">
-					<img src="#" alt="jugador X">
+					<img src="https://image.ibb.co/g3mL3R/estadistica.png" alt="jugador X">
 				</div>
 			</div>
 

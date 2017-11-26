@@ -29,17 +29,31 @@ h2{
     border-radius: 5px;
     border: 1px solid #888888;
     box-shadow: -5px 5px 2px #888888;
+    background-color: #374850;
 }
 
 .jugador .imagen, .jugador .grafico{
     width: 50%;
+    padding-left: 30px;
 }
 
-.columnas1 .imagen, .columnas1 .imagen img{
-    border: 1px solid #FFF;
+.jugador .grafico img{
+    border: 2px solid white;
+    height: 120px;
+    width: 180px;
+}
+
+.columnas1 .imagen{
     border-radius: 50%;
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
+}
+
+.columnas1 .imagen img{
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
 }
 
 .jugadores{
