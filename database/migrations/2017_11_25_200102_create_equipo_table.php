@@ -15,14 +15,14 @@ class CreateEquipoTable extends Migration
     {
         Schema::create('equipo', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre');
-            $table->string('imagen');
-            $table->smallInteger('estado');
-            $table->date('fecha_fundacion');
-            $table->string('ciudad');
-            $table->string('pais');  
+            $table->string('nombre')->nullable();
+            $table->string('imagen')->nullable();
+            $table->smallInteger('estado')->nullable();
+            $table->date('fecha_fundacion')->nullable();
+            $table->string('ciudad')->nullable();
+            $table->string('pais')->nullable();
             $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');          
+            $table->foreign('user_id')->references('id')->on('users');
             $table->rememberToken();
             $table->timestamps();
         });

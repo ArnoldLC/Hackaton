@@ -20,4 +20,8 @@ class Equipo extends Model
     public function partido() {
         return $this->hasMany('Partido');
     }
+
+    public function user() {
+        return $this->belongsTo('User');
+    }
 }
