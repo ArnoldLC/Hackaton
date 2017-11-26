@@ -25,7 +25,7 @@
 					<div class="box-body">
 						<!--FOREACH DE LOS EQUIPOS REGISTRADOS-->			
 						<div class="col-md-12">			
-							<button class="btn btn-success">CREAR EQUIPO</button>
+							<a href="{{url('/equipo/create')}}" class="btn btn-success">CREAR EQUIPO</a>
 						</div>
 						@for ($i=1;$i < 10 ; $i ++)
 						<div class="col-md-3">

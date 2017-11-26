@@ -45,10 +45,12 @@
 							
 						</div>
 
-
+						<div class="text-center">
+							<input type="submit" id="submit" class="btn btn-primary">
+						</div>
 					</div>
 					<!-- /.box-body -->
-					<input type="submit" id="submit" class="btn btn-primary">
+					
 				</div>
 				<!-- /.box -->
 					{!! Form::close() !!}
